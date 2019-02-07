@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="dasamigoscss.css">
+<title>Das Amigo's original old skol | Das Amigo's</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.png" type="image/png">
+
+</head>
+<body>
+
+<div class="logo">
+<a href="dasamigosfi.html">
+<img class="dasamigoslogo" src="dasamigoslogo.png" alt="Das Amigo's">
+</a>
+</div>
+
+<table class="esittely">
+
+<tr>
+
+<th>
+
+<div class="container">
+
+  <div class="mySlides">
+    <div class="numbertext"></div>
+      <img src="nikekengät.jpg" style="width:600px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"></div>
+      <img src="wearingoldskol.jpg" style="width:600px">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="nikekengät.jpg" style="width:300px" onclick="currentSlide(1)" alt="Das Amigo's Original Old Skol">
+    </div>
+</div>
+<div class="row2">
+    <div class="column"> 
+      <img class="demo cursor" src="wearingoldskol.jpg" style="width:300px" onclick="currentSlide(2)" alt="Das Amigo's Original Old Skol">
+    </div>
+  
+  </div>
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+
+</th>
+
+</tr>
+
+</table>
+
+<div class="osto">
+
+<p class="otsikko">Das Amigo's Original Old Skol</p>
+
+<select>
+  <option value="size7">41</option>
+  <option value="size8">42</option>
+  <option value="size9">43</option>
+  <option value="size10">44</option>
+  <option value="size11">45</option>
+  <option value="size12">46</option>
+  <option value="size13">47</option>
+  <option value="size14">48</option>
+  </select>
+  
+  <p class="maksu">150,00 €</p>
+  
+  <button class="buybutton">
+Loppuunmyyty</button>
+</div>
+
+</body>
+</html>

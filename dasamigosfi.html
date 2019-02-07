@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="dasamigoscss.css">
+<title>Das Amigo's</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.png" type="image/png">
+
+</head>
+
+<body class="etusivu">
+<div class="logo">
+<a href="dasamigosfi.html">
+<img class="dasamigoslogo" src="dasamigoslogo.png" alt="Das Amigo's">
+</a>
+</div>
+
+<div class="teksti">
+
+<table>
+<tr>
+<th>
+<button class="dropbutton" onclick="window.location.href='dropfi.html'">
+2019 helmikuun mallisto</button>
+</th>
+</tr>
+<tr>
+<th>
+<button class="storebutton" onclick="window.location.href='storesfi.html'">
+Kaupat</button>
+</th>
+</tr>
+<tr>
+<th>
+<button class="aboutbutton" onclick="window.location.href='aboutusfi.html'">
+Tietoja meistä</button>
+</th>
+</tr>
+<tr>
+<th>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">suomi</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="dasamigosfi.html">suomi</a>
+    <a href="dasamigos.html">English</a>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</th>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
